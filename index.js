@@ -13,3 +13,8 @@ function save() {
     countEl.textContent = 0
     count = 0
 }
+
+function deleteCount() {
+    count = 0; // Reset count to 0
+    countEl.textContent = count; // Update the displayed count
+}

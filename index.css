@@ -4,34 +4,30 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
+    padding: 0 15px; /* Add padding for smaller screens */
 }
 
-h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+h1, h2, p {
     color: white;
 }
 
 h2 {
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: white;
+    font-size: 3em;
 }
 
-p{
-    font-size: 25px;
-    color: white;
+p {
+    font-size: 1.2em;
 }
 
+/* Buttons */
 button {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     color: white;
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
+    width: 100%; /* Adapt button width */
+    max-width: 200px;
+    margin: 10px auto; /* Center buttons */
     border-radius: 5px;
 }
 
@@ -41,4 +37,31 @@ button {
 
 #save-btn {
     background: darkgreen;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        max-width: 150px; /* Reduce button width */
+        padding: 8px;
+    }
+}
+
+#delete-btn {
+    background: darkblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
