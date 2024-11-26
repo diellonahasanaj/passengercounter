@@ -7,6 +7,12 @@ function increment() {
     countEl.textContent = count
 }
 
+function deleteCount() {
+    count = 0; // Reset count to 0
+    countEl.textContent = count; // Update the displayed count
+}
+
+
 function save() {
     let countStr = count + " - "
     saveEl.textContent += countStr
